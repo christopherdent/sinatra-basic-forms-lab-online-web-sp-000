@@ -13,6 +13,9 @@ class App < Sinatra::Base
   
   
   post '/puppy' do 
+     #@text = params[:user_phrase]
+     @puppy = Puppy.new
+  
     erb :display_puppy 
   end 
 
