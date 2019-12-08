@@ -6,10 +6,9 @@ class App < Sinatra::Base
     erb :index 
   end
 
-  post '/piglatinize' do
-     @text = params[:user_phrase]
-     @piglatinizer = PigLatinizer.new
-    erb :piglatinize
+  get '/new' do
+ 
+    erb :create_puppy
   end
 
 
